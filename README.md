@@ -1,11 +1,11 @@
 
 ## Differences Between Interfaces and Types in TypeScript ?
 
-# In TypeScript, both interfaces and types are used to define custom shapes for data, but they have subtle differences that influence when and how you should use them.
+## In TypeScript, both interfaces and types are used to define custom shapes for data, but they have subtle differences that influence when and how you should use them.
 
-# Interfaces are primarily designed for defining object structures, making them a natural fit for object-oriented programming. They support declaration merging, meaning you can define an interface in multiple places, and TypeScript will automatically combine them. This is useful for extending third-party types or gradually adding properties. Interfaces also work seamlessly with extends for inheritance, making them ideal for class implementations.
+## Interfaces are primarily designed for defining object structures, making them a natural fit for object-oriented programming. They support declaration merging, meaning you can define an interface in multiple places, and TypeScript will automatically combine them. This is useful for extending third-party types or gradually adding properties. Interfaces also work seamlessly with extends for inheritance, making them ideal for class implementations.
 
-# Types, on the other hand, are more flexible. They can represent not just objects but also primitives, unions ("active" | "inactive"), tuples, and even complex mapped types. However, types cannot be merged or extended after creation—though you can use intersections (&) to combine them. They’re the go-to choice for advanced type manipulations, like conditional types or utility types (Partial<T>, Pick<T, K>).
+## Types, on the other hand, are more flexible. They can represent not just objects but also primitives, unions ("active" | "inactive"), tuples, and even complex mapped types. However, types cannot be merged or extended after creation—though you can use intersections (&) to combine them. They’re the go-to choice for advanced type manipulations, like conditional types or utility types (Partial<T>, Pick<T, K>).
 
  ## When to Use Which?
 
